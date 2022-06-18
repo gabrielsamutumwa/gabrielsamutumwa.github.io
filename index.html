@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Firmbee.com - Free Project Management for remote teams">
+    <title>Gabriel Samutumwa</title>
+     <!-- Favicon-->
+     <link rel="icon" type="image/x-icon" href="img/icons/icon.jpg" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <!-- Navigation -->
+    <div class="row justify-content-end">
+        <div class="col-12 col-lg-7 col-xl-6 col-xxl-5">
+            <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 ms-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i id="mobile-toggler" class="bi bi-list"></i></span>
+                </button>
+                <button id="toggler" class="navbar-toggler navbar-toggler-big" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"><i
+                        class="bi bi-list"></i></button>
+                <div class="collapse navbar-collapse shadow-bg" id="navbarNavAltMarkup">
+                    <div class="navbar-nav p-5">
+                        <a class="nav-item nav-link active text-center mx-3" href="#home">Home</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#team">About</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#portfolio">Portfolios</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- First section -->
+    <div id="home" class="frontpage">
+        <div class="wrapper">
+            <header>
+                <div class="row">
+                    <div class="left col-12 col-lg-4">
+                        <div class="col-4 d-none d-lg-block">
+                            <div class="logo">
+                                <a href="#">
+                                    <h2>
+                                        <!-- Welcome  -->
+                                    </h2>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="header">
+                                <div class="header-text">
+                                    <h1>
+                                      Gabriel's <span class="highlighted">Port</span>folio
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row justify-content-lg-start justify-content-center buttons">
+                                <div class="col-7 col-sm-3 col-lg-5">
+                                    <a class="main-button btn-view-portfolio text-center" href="#portfolio">View
+                                        Portfolio</a>
+                                </div>
+                                <div class="col-7 col-sm-3 col-lg-5">
+                                    <a class="button text-center" href="#">Download CV</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <div class="indicators">
+                                    <span class="indicator-main" onclick="currentSlide(1)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(2)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(3)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(4)"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 ">
+                                <div class="d-none d-lg-block scroll-item">
+                                    <i class="bi bi-mouse me-2 align-middle"></i><span class="scroll-text">Scroll
+                                        down</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="gallery">
+                            <div class="slide fade">
+                                <img src="img/slides/coffee.jpg" alt="woman">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/notebook.jpg" alt="notebook">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/coffee.jpg" alt="man">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/notebook.jpg" alt="coffee">
+                            </div>
+                            <div class="arrows d-none d-lg-block">
+                                <a class="arrow-right" onclick="plusSlides(1)"><i class="bi bi-arrow-right"></i></a>
+                                <a class="arrow-left" onclick="plusSlides(-1)"><i class="bi bi-arrow-left"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <main>
+         <!-- About section -->
+         <section id="team">
+            <div class="team">
+                <div class="container">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-12 col-md-6">
+                            <h2>About <span class="highlighted">me</span></h2>
+                            <p class="mt-5">Hello! My name is Gabriel and I enjoy creating things that live on the internet. From a young age, I've always been fascinated with Technology. I have been working as a freelance designer and Full Stack developer since 2018. I use my creative side to design and my logical side to code. As a bonus, being both designer and developer allows me to make sure no detail is lost in translation..</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <img class="img-fluid" src="img/Gabe1.png" alt="Team Work">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- service secrtion -->
+        <section>
+            <div id="accordion">
+                <div class="expertize container">
+
+                    <div class="cards row justify-content-between">
+                        <div class="col-3">
+                            <div id="headingOne" class="card" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                <i class="card-icon bi bi-lightbulb"></i>
+                                <p class="subtitles">Web <br> Design</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="card-icon bi bi-code-slash"></i>
+                                <p class="subtitles">UI/UX  <br> Design</p>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div id="headingThree" class="card collapsed" data-toggle="collapse"
+                                data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                <i class="card-icon bi bi-window-desktop"></i>
+                                <p class="subtitles">Web <br> Development</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="collapseOne" class="content row collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>Web <br><span class="highlighted">Design</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>Everywhere & Every Device, Your Site Should Flow Seamlessly
+                                <br>from Smartphone to desktops, your site should look and function Seamlessly.
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                 
+
+                    <div id="collapseThree" class="content row collapse" aria-labelledby="headingThree"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>UI/UX <br><span class="highlighted">Design</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>It's all about the user experience. The Websites that i create are designed to give you the best overall experience. I focus on overall usability, ease of use and interaction between thr users and system.</p>
+                        </div>
+                    </div>
+
+                    <div id="collapseFour" class="content row collapse" aria-labelledby="headingFour"
+                        data-parent="#accordion">
+                        <div class="col-12 col-lg-6">
+                            <h2>Web<br><span class="highlighted">Development</span></h2>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <p>I build things for the web. I specialize in creating sites for individuals and small businesses. You shouldn't have to settle for cheap solutions or generic templates. I provide custom designs at afforable prices. Frequently your website is the first impression your customers will get, so make sure it's a good one. Since my time is split between a few different things, I'm not able to take on every project I'd like to, but I'm always looking for fun work. Take a look at my portfolio below.!</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- Second section -->
+        <section id="portfolio">
+            <!--  id only for scrolling -->
+            <div class="portfolio">
+                <div class="portfolio-header-area">
+                    <div class="container">
+                        <div class="portfolio-header">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-lg-4">
+                                    <h2>Portfolio</h2>
+                                </div>
+                                <div id="filters" class="col-12 col-lg-8">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio active" data-filter="*">All projects</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c1">Brand</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c2">Webdesign</button>
+                                        </div>
+                                        <div class="col-6 col-sm-3">
+                                            <button class="btn-portfolio" data-filter=".c3">Social Media</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-body">
+                    <div class="container">
+                        <div class="row grid">
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/sah.png" alt="Website">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Workshop Website</h3>
+                                        <p>Personal Project</p>
+                                        <a class="see-more-button" href="#">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/w2.jpg" alt="Website">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Branding Website</h3>
+                                        <p>Personal Project</p>
+                                        <a class="see-more-button" href="portfolio.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/w3.jpg" alt="Website">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Characters</h3>
+                                        <p>Category 3</p>
+                                        <a class="see-more-button" href="portfolio.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div> -->
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/sah2.png" alt="Brand">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Website</h3>
+                                        <p>Personal Project</p>
+                                        <a class="see-more-button" href="#">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/w5.jpg" alt="Website">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Job Website</h3>
+                                        <p>Personal Project</p>
+                                        <a class="see-more-button" href="#">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- <div class="col-sm-4 all c1">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/w6.jpg" alt="Brand">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Brand</h3>
+                                        <p>Category 1</p>
+                                        <a class="see-more-button" href="portfolio.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div> -->
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/cms.png" alt="Website">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>CM System </h3>
+                                        <p>Customer</p>
+                                        <button class="see-more-button">See more</button>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/food.png" alt="Website">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Restaurant Website</h3>
+                                        <p>Customer</p>
+                                        <a class="see-more-button" href="">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="col-sm-4 all c2">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/w9.jpg" alt="Website">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Brand leaflet</h3>
+                                        <p>Personal Project</p>
+                                        <a class="see-more-button" href="#">See more</a>
+                                    </div>
+                                </figure>
+                            </div>
+                            <!-- <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/w10.jpg" alt="Social">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Characters</h3>
+                                        <p>Category 3</p>
+                                        <a class="see-more-button" href="portfolio.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div> -->
+                            <!-- <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/w11.jpg" alt="Characters">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Characters</h3>
+                                        <p>Category 1</p>
+                                        <a class="see-more-button" href="portfolio.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div> -->
+                            <!-- <div class="col-sm-4 all c3">
+                                <figure class="hover-img">
+                                    <img class="img-fluid" src="img/portfolio/w12.jpg" alt="Characters">
+                                    <div class="overlay"></div>
+                                    <div class="text">
+                                        <h3>Characters</h3>
+                                        <p>Category 3</p>
+                                        <a class="see-more-button" href="portfolio.html">See more</a>
+                                    </div>
+                                </figure>
+                            </div> -->
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-sm-6 col-lg-3">
+                                <a id="load-more" class="main-button my-5">View more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Third section -->
+        <!-- <section>
+            <div class=" clients">
+                <hr>
+                <div class="container">
+                    <div class="row clients-area align-items-center">
+                        <div class="col-12 col-lg-3 col-xl-4 mb-3">
+                            <h2>Clients</h2>
+                        </div>
+                        <div class="col-12 col-lg-9 col-xl-8">
+                            <div class="row align-items-end">
+                                <div class="col-12 col-sm-4">
+                                    <img src="img/icons/firmbee.svg" alt="firmbee">
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <img class="client-img" src="img/icons/create-paper.svg" alt="create paper">
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <img src="img/icons/point-design.svg" alt="point design">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section> -->
+
+
+
+        <!-- Fifth section -->
+        <section id="contact">
+            <div class="contact">
+                <hr class="m-0">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="contact-form col-12 col-sm-6 col-md-7">
+                            <h2>Contact</h2>
+                            <form action="https://formspree.io/f/mvolnpvq" method="post" class="needs-validation" novalidate>
+                                <div class="form-group mt-5">
+                                    <label class="col-12">Full Name</label>
+                                    <input class="col-12" type="text" id="fname" placeholder="Full name" name="fname"
+                                        required>
+                                    <div class="invalid-feedback warning">Please write a full name.</div>
+                                </div>
+                                <div class="form-group mt-5">
+                                    <label class="col-12">E-mail</label>
+                                    <input class="col-12" type="email" id="email" placeholder="E-mail" name="email"
+                                        required>
+                                    <div class="invalid-feedback warning">Please write a correct e-mail.</div>
+                                </div>
+                                <div class="form-group mt-5">
+                                    <label class="col-12">Message</label>
+                                    <input class="col-12" type="text" id="message" placeholder="Message" name="message"
+                                        required>
+                                    <div class="invalid-feedback warning">Please write a message.</div>
+                                </div>
+                                <div class="form-group row justify-content-end">
+                                    <div class="col-12 col-lg-5 mb-5 justify-content-start justify-content-sm-end">
+                                        <button type="submit" name="submit" class="main-button">Send message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="media row my-5">
+                                <div class="col-12 col-lg-4">
+                                    <p>Social media</p>
+                                    <p class="warning">
+                                        <a href="https://www.instagram.com/phenomenal_gabe/?hl=en" target="_blank">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/Gabriel.Samutumwa" target="_blank">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                        <a href="https://twitter.com/phenomenalgabe?t=TqMsKG5aYciaCF4PGSbFPQ&s=08" target="_blank">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                        <a href="https://zm.linkedin.com/in/gabriel-samutumwa" target="_blank">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                        <a href="https://wa.me/260950407579" target="_blank">
+                                            <i class="bi bi-whatsapp"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-lg-4 mt-5 mt-md-0">
+                                    <p>Contact me via e-mail</p>
+                                    <a href="mailto:gabzsamz@gmail.com" class="warning">gabzsamz@gmail.com</a>
+                                </div>
+                                <div class="col-12 col-lg-4 mt-5 mt-md-0">
+                                    <p>My phone</p>
+                                    <a href="tel:+260950407579" class="warning">+260 95040 7579</a>
+                                </div>
+                            </div>
+                            <!-- 0977585789 -->
+                            <div class="footer d-none d-md-block">
+                                <div class="row justify-content-start align-items-end">
+                                    <div class="col-3">
+                                        <!-- <img src="img/icons/firmbee.svg" alt="firmbee"> -->
+                                    </div>
+                                    <div class="col-9">
+                                        <span>© 2022-23 Design with by <a
+                                                href="https://firmbee.com/solutions/free-invoicing-app-billing-software"
+                                                title="Firmbee - Online Remote working app for collaboration & task management"
+                                                target="_blank">Gabriel Samutumwa</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="up" onclick="topFunction()" id="top" title="Go to top">
+                                <i class="bi bi-arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="map">
+                        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?q=lusaka&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                        </iframe>
+                        
+                </div>
+                <div class="footer d-md-none">
+                    <div class="container">
+                        <div class="row justify-content-start align-items-end">
+                            <div class="col-3">
+                                <img src="img/icons/firmbee.svg" alt="firmbee">
+                            </div>
+                            <div class="col-9">
+                                <span>© 2022-23 Firmbee. Design with by <a
+                                        href="https://firmbee.com/solutions/free-invoicing-app-billing-software"
+                                        title="Firmbee - Online Remote working app for collaboration & task management"
+                                        target="_blank">Firmbee</a></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+    <!-- Isotope gallery -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- or -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS codes -->
+    <script src="js/gallery.js"></script>
+    <script src="js/slides.js"></script>
+    <script src="js/scrolls.js"></script>
+    <script src="js/validation.js"></script>
+
+    <!--
+    This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
+    You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+    -->
+
+</body>
+
+</html>
