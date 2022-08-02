@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Firmbee.com - Free Project Management for remote teams">
+    <title>Name of company</title>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <!-- Navigation -->
+    <div class="row justify-content-end">
+        <div class="col-12 col-lg-7 col-xl-6 col-xxl-5">
+            <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 ms-auto">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i id="mobile-toggler" class="bi bi-list"></i></span>
+                </button>
+                <button id="toggler" class="navbar-toggler navbar-toggler-big" type="button" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"><i
+                        class="bi bi-list"></i></button>
+                <div class="collapse navbar-collapse shadow-bg" id="navbarNavAltMarkup">
+                    <div class="navbar-nav p-5">
+                        <a class="nav-item nav-link active text-center mx-3" href="./index.html#home">Home</a>
+                        <a class="nav-item nav-link text-center mx-3" href="./index.html#portfolio">Portfolios</a>
+                        <a class="nav-item nav-link text-center mx-3" href="./index.html#team">Team</a>
+                        <a class="nav-item nav-link text-center mx-3" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- First section -->
+    <div id="home" class="frontpage">
+        <div class="wrapper">
+            <header>
+                <div class="row">
+                    <div class="left col-12 col-lg-4">
+                        <div class="col-4 d-none d-lg-block">
+                            <div class="logo">
+                                <a href="#">
+                                    <img src="img/goSM.png" alt="Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="header">
+                                <div class="header-text">
+                                    <h1>
+                                        We <span class="highlighted">work</span> creatively
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="row justify-content-lg-start justify-content-center buttons">
+                                <div class="col-7 col-sm-3 col-lg-5">
+                                    <a class="main-button btn-view-portfolio text-center"
+                                        href="./index.html#portfolio">View
+                                        portfolio</a>
+                                </div>
+                                <div class="col-7 col-sm-3 col-lg-5">
+                                    <a class="button text-center" href="#contact">Contact</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <div class="indicators">
+                                    <span class="indicator-main" onclick="currentSlide(1)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(2)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(3)"></span>
+                                    <span class="indicator-main" onclick="currentSlide(4)"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 ">
+                                <div class="d-none d-lg-block scroll-item">
+                                    <i class="bi bi-mouse me-2 align-middle"></i><span class="scroll-text">Scroll
+                                        down</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="gallery">
+                            <div class="slide fade">
+                                <img src="img/slides/woman.jpg" alt="woman">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/notebook.jpg" alt="notebook">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/man.jpg" alt="man">
+                            </div>
+                            <div class="slide fade">
+                                <img src="img/slides/coffee.jpg" alt="coffee">
+                            </div>
+                            <div class="arrows d-none d-lg-block">
+                                <a class="arrow-right" onclick="plusSlides(1)"><i class="bi bi-arrow-right"></i></a>
+                                <a class="arrow-left" onclick="plusSlides(-1)"><i class="bi bi-arrow-left"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <main>
+        <!-- Second section -->
+        <section id="portfolio">
+            <!--  id only for scrolling -->
+            <div class="portfolio">
+                <div class="portfolio-header-area">
+                    <div class="container">
+                        <div class="portfolio-header">
+                            <div class="row align-items-end">
+                                <div class="col-md-12 col-lg-4">
+                                    <h2>Portfolio</h2>
+                                </div>
+                                <div class="col-sm-11 col-lg-7">
+                                    <p class="title">Business website</p>
+                                    <p>Graphic design</p>
+                                </div>
+                                <div class="col-sm-1 col-md-1 ms-auto">
+                                    <a href="./index.html#portfolio"><i class="bi bi-arrow-left"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-body">
+                    <div class="container text-center mb-5">
+                        <img class="img-fluid" src="http://via.placeholder.com/1040x1360" alt="placeholder">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <div class="contact">
+                <hr class="m-0">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="contact-form col-12 col-sm-6 col-md-7">
+                            <h2>Contact</h2>
+                            <form action="mailto:you@yourdmainhere.com" method="post" class="needs-validation"
+                                novalidate>
+                                <div class="form-group mt-5">
+                                    <label class="col-12">Full Name</label>
+                                    <input class="col-12" type="text" id="fname" placeholder="Full name" name="fname"
+                                        required>
+                                    <div class="invalid-feedback warning">Please write a full
+                                        name.</div>
+                                </div>
+                                <div class="form-group mt-5">
+                                    <label class="col-12">E-mail</label>
+                                    <input class="col-12" type="email" id="email" placeholder="E-mail" name="email"
+                                        required>
+                                    <div class="invalid-feedback warning">Please write a correct
+                                        e-mail.</div>
+                                </div>
+                                <div class="form-group mt-5">
+                                    <label class="col-12">Message</label>
+                                    <input class="col-12" type="text" id="message" placeholder="Message" name="message"
+                                        required>
+                                    <div class="invalid-feedback warning">Please write a
+                                        message.</div>
+                                </div>
+                                <div class="form-group row justify-content-end">
+                                    <div class="col-12 col-lg-5 mb-5 justify-content-start justify-content-sm-end">
+                                        <button type="submit" name="submit" class="main-button">Send message</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="media row my-5">
+                                <div class="col-12 col-lg-4">
+                                    <p>Social media</p>
+                                    <p class="warning">
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <i class="bi bi-instagram"></i>
+                                        </a>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                        <a href="https://twitter.com/" target="_blank">
+                                            <i class="bi bi-twitter"></i>
+                                        </a>
+                                        <a href="https://linkedin.com/" target="_blank">
+                                            <i class="bi bi-linkedin"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-lg-4 mt-5 mt-md-0">
+                                    <p>Contact me via e-mail</p>
+                                    <a href="mailto:example@example.com" class="warning">example@example.com</a>
+                                </div>
+                                <div class="col-12 col-lg-4 mt-5 mt-md-0">
+                                    <p>My phone</p>
+                                    <a href="tel:+00-000-00-00" class="warning">+00 000 00
+                                        00</a>
+                                </div>
+                            </div>
+                            <div class="footer d-none d-md-block">
+                                <div class="row justify-content-start align-items-end">
+                                    <div class="col-3">
+                                        <img src="img/icons/firmbee.svg" alt="firmbee">
+                                    </div>
+                                    <div class="col-9">
+                                        <span>© 2022-23 Firmbee. Design with by <a
+                                                href="https://firmbee.com/solutions/free-invoicing-app-billing-software"
+                                                target="_blank">Firmbee</a></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="up" onclick="topFunction()" id="top" title="Go to top">
+                                <i class="bi bi-arrow-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="map">
+                        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=16.814528927206997%2C51.03634857103406%2C17.15098522603512%2C51.1575203446024&amp;layer=mapnik&amp;marker=51.09697415177232%2C16.982757076621056"></iframe>
+                    </div>
+                </div>
+                <div class="footer d-md-none">
+                    <div class="container">
+                        <div class="row justify-content-start align-items-end">
+                            <div class="col-3">
+                                <img src="img/icons/firmbee.svg" alt="firmbee">
+                            </div>
+                            <div class="col-9">
+                                <span>© 2022-23 Firmbee. Design with by <a
+                                        href="https://firmbee.com/solutions/free-invoicing-app-billing-software"
+                                        title="Firmbee - Online Remote working app for collaboration & task management"
+                                        target="_blank">Firmbee</a></span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+            ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
+    <!-- Isotope gallery -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- or -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+    <!-- Custom JS codes -->
+    <script src="js/slides.js"></script>
+    <script src="js/scrolls.js"></script>
+    <script src="js/validation.js"></script>
+
+    <script>
+        $('document').ready(function () {
+            $(window).scrollTop(1200);
+        });
+    </script>
+
+    <!--
+    This template is licenced under Attribution 3.0 (CC BY 3.0 PL),
+    You are free to: Share and Adapt. You must give appropriate credit, you may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+    -->
+
+</body>
+
+</html>
